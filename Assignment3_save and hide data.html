@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      .box1 {
+        height: 300px;
+        width: 300px;
+        margin-top: 100px;
+        margin: auto;
+        text-align: center;
+        box-sizing: 20px;
+        border: 2px solid rgb(196, 38, 38);
+    
+      }
+      .btn{
+        height: 30px;
+        width: 80px;
+        border: 2px solid rgb(66, 66, 136);
+      }
+      .btn2{
+        height: 30px;
+        width: 100px;
+        border: 2px solid rgb(66, 66, 136);
+
+      }
+
+      .box2{
+        height: 400px;
+        width: 500px;
+        margin: auto;
+        margin-top: 50px;
+        border: 2px solid;
+        text-align: center;
+      
+      }
+      table {
+        height: 10px;
+        width: 400px;
+        margin: auto;
+    
+    }
+    th, td {
+        border: 1px solid black;
+        padding: 5px;
+        text-align: left;
+        background-color: floralwhite;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="box1">
+      <input type="text" id="name" onkeyup="demo1()"  placeholder="Enter Your Name" /><br /><br />
+
+      <input type="text" id="mobile" onkeyup="demo2()" placeholder="Enter Your Mobile" /><br /><br />
+
+      <input type="text" id="email" onkeyup="demo3()" placeholder="Enter Mail" /><br /><br />
+
+      <input type="text" id="address" onkeyup="demo4()" placeholder="Enter Address" /><br /><br />
+      <br><br>
+
+      <button class="btn" onclick="addData()">Send Here</button>
+    </div>
+
+    <div class="box2" id="outputBox">
+      <button class="btn2" onclick="hideData()">Hide Records</button>
+      <br><br>
+
+      <table id="dataTable">
+        <thead>
+            <tr>
+                <!-- <th id="srno">SrNo</th> -->
+                <th>Name</th>
+                <th>Mobile</th>
+                <th>Mail</th>
+                <th>Adress</th>
+            </tr>
+        </thead>
+        <tbody>
+          
+           
+          </tr>
+           
+           
+        </tbody></table>
+  
+    </div>
+
+
+
+
+
+
+
+
+
+    <script>
+      function addData()
+      {
+       // var srno = document.getElementById("SrNo").value;
+        var name= document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var mobile = document.getElementById("mobile").value;
+        var address = document.getElementById("address").value;
+
+        var table= document.getElementById("dataTable").getElementsByTagName('tbody')[0];
+        var newRow = table.insertRow(table.rows.length);
+
+        var cell1 = newRow.insertCell(0);
+        var cell2 = newRow.insertCell(1);
+        var cell3 = newRow.insertCell(2);
+        var cell4 = newRow.insertCell(3);
+       // var cell4 = newRow.insertCell(4);
+
+
+       // cell1.innerHTML = srno;
+        cell1.innerHTML = name;
+        cell2.innerHTML = email;
+        cell3.innerHTML = mobile;
+        cell4.innerHTML = address;
+
+
+      }
+
+      function hideData()
+      {
+        var table = document.getElementById("dataTable").getElementsByTagName('tbody')[0];
+        table.innerHTML = "";
+      }
+      
+     
+       
+      
+      
+        
+             
+       // for (i = 0; i < x.length; i++) {
+          // alert(x[i]);
+        //  document.getElementById('td1').innerHTML = x[i++]; 
+       //   document.getElementById('td2').innerHTML = x[i++];
+       //   document.getElementById('td3').innerHTML = x[i++];
+       //   document.getElementById('td4').innerHTML = x[i++];
+       //   document.getElementById('td5').innerHTML = x[i++];
+
+     // }
+
+
+
+
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- object iterating -->
+
+
+    <!--for in - 
+
+    iterate Array object data
+    return key value 
+    -->
+
+    <script>
+        const Product = {
+            P_id: 1,
+            P_Name: 'Laptop',
+            P_Price: 45000,
+            P_Features: {
+                feature1: 'RAM- 8 GB',
+                feature2: 'ROM 1TB',
+                feature3: 'Processor: Intel',
+            }
+
+        }
+        console.log(Product);
+
+        //**************************************************
+
+        for (let keys in Product){
+            console.log(keys);
+
+            //values 
+            console.log(`${keys} :${Product[keys]}`);
+        }
+
+        //nested object iterate
+
+        for(let keys in Product.P_Features)
+        {
+            console.log(keys+" : "+Product.P_Features[keys]);
+        }
+
+    </script>
+</body>
+</html>

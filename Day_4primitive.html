@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- PDT- 
+        built in data types-
+        predefined
+
+        int,char,float,double,long double
+     -->
+
+    <!-- NPDT- 
+        user defined
+        designed by developes
+
+        array,object
+
+    -->
+
+    <!-- IN  JS
+    
+    PDT- number,string,boolean,null,undefined,symbol,   bigint
+
+    NPDT- array ,object
+    
+    -->
+
+    <script>
+
+        let a = 20;
+        console.log(a);
+
+        let b = 20.20;
+        console.log(b);
+
+        // typeof  operator- to check data types of that initialize value in a specific variable
+
+        console.log(typeof a);
+        console.log(typeof b);//number
+
+
+        // *********************************
+        // string- collection of charcters
+        // stored in  a '' or " "
+
+        var name = "Sarthak";
+        console.log(name);
+
+        console.log(typeof name);//string
+
+        // **********************************************
+        //boolean
+
+        var isEligible = true;
+        console.log(isEligible);//true
+
+        console.log(typeof isEligible);//boolean
+
+
+        // ***********************************************
+
+        // null;
+
+        //is a object in JS 
+        //as per expert is a  bug in JS
+
+        var emp_id = null;
+        console.log(emp_id);
+        console.log(typeof emp_id);//object
+
+        // *************************
+
+
+        var emp_Role = " ";
+        console.log(emp_Role);
+        console.log(typeof emp_Role);//string
+
+
+        // ********************************************************
+
+        // undefined- when we just declared but not initialize 
+
+        //by default value- 
+        //data type- undefined
+
+        let skill;
+        console.log(skill);//undefined
+        console.log(typeof skill);//undefined
+
+        // *********************************************
+
+        // symbol
+
+        //is  a data type similar to number,string.boolean
+
+        // It call a symbol function and return a  unique value
+
+        // It represents a unique "hidden" identifier that no other code can accidentally access.
+
+        //used to create object unique indentifier
+
+        let x = 10;
+        let y = 10;
+        console.log(x == y);//true
+
+
+        console.log(Symbol(x) == Symbol(y));//false
+
+
+
+        // ****************************************************************************************
+
+        // NPDT-
+
+        // Array 
+        // object
+
+
+        //Array-
+        //is a  collection of similar or different data type of elements
+        //stored values in a single variable
+
+        //start indexing from 0
+
+        //Array is a special type of object in a JS
+
+
+
+        const arr = [10, "ABC", true, null, undefined];
+
+        console.log(arr);
+
+        console.log(typeof arr);//object
+
+
+        // ***************************************************************
+
+        // Object-is entity having methods and properties
+        //we can stored large amount of data in a object
+
+        //key value pair
+
+        const obj = {
+            // key:value
+            id: 1,
+            name: 'Pratik',
+            skill: 'React',
+            role: 'MERN Dev',
+            isElgible: true,
+            Tech: ['HTML', 'CSS', "JS"]
+        }
+
+
+        console.log(obj);
+
+        console.log(typeof obj);//object
+
+
+        // **************************************************88
+        // const person = {
+        //     firstName: "John",
+        //     lastName: "Doe",
+        //     age: 50,
+        //     eyeColor: "blue"
+        // };
+
+        // let id = Symbol('id');
+        // person[id] = 140353;
+
+
+        // console.log(person);
+        // console.log(person.id);//undefined
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>

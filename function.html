@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Function :- block of code 
+        bunch of statement i.e function
+
+        write once and reused multiple times
+
+        we can called same function multiple times by passing different arguments
+
+        syntax:-
+        function funname()
+        {
+            block of code
+        }
+        call function
+        funname()
+     -->
+
+     <!-- mostly function called an Event
+     js is event based scripting language -->
+    
+
+     <h1 id ="data">HELLO WORLD</h1>
+     <button onclick="Demo()">Click Here</button>
+     <button onclick="Add()">Add</button>
+     <button onclick="Mult()">Multiplication</button>
+
+    <script>
+       // var result = document.getElementById('data').innerHTML;
+       // console.log(result);
+       // document.getElementById('data').style.color="orange";
+
+
+       function Demo()
+       {
+        //function declaration
+        document.getElementById('data').innerHTML="Welcome to the Function";
+        document.getElementById('data').style.color="orange";
+
+       }
+       //function calling
+
+       //Demo();
+//***************************************************************
+
+function Add(){
+    //alert('function called');
+    //document.write(100 + 20);
+    console.log(100 + 20);
+}
+    //Add();
+
+//************************************************************************
+
+function Mult()
+{
+    //alert(10*10);
+    console.log(10*10);
+ 
+}
+Mult();
+
+
+//***********************************************************
+
+//function parameters
+//pass such a values or variables when we declared our function.
+
+//let a;
+//let b;
+
+function Addition(a,b)
+{
+    console.log(a+b);
+
+}
+Addition(100,200);//argument i.e actual value which pointing to a and b parameters.......
+Addition(50,20); 
+
+
+//***********************************************************
+
+function Emp(fname,lname){
+    document.write(`<h1>${fname} ${lname}</h1>`)
+}
+//Emp("jeon", "jungkook");
+//Emp("charlie","puth");
+    </script>
+</body>
+</html>

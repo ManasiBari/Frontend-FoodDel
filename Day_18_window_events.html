@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body onload="alert('Hello onload event')" onscroll="console.log('onscroll event called')" style="height:1000px"
+    onresize="demo()">
+    <!-- window events -->
+
+
+    <!-- onload()- when load browser window
+    
+        onscroll()- when we scroll
+        onresize()- when we resize or minimize or maximize
+    -->
+
+
+
+
+    <script>
+
+        function demo() {
+            alert('onResize Event Called!!');
+
+            //innerWidth()-return inner portion width
+            //outerwidth()- return total width of a screen
+
+            //innerHeight()- return height excluding tab,search bar
+            //outerHeight()-return total height of a screen
+
+            console.log(`Inner Width Is : ${window.innerWidth}`);
+            console.log(`Outer Width Is : ${window.outerWidth}`);
+
+            console.log(`Inner Height Is : ${window.innerHeight}`)
+            console.log(`Outer Height Is : ${window.outerHeight}`)
+        }
+    </script>
+
+</body>
+
+</html>

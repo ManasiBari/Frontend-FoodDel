@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- return keyword
+    it executes a value outside the fuction 
+its stops the execution of your function after return data; -->
+    
+
+<script>
+   // function Add(a, b, c){
+   //     console.log(a + b + c);
+   // }
+
+    //Add(500,200,100);
+
+
+   // function Add(x,y){
+        //alert(x+y);
+    //    return x+y;
+   // }
+  // var res= Add(20,10);
+  // console.log(res);
+
+
+//*****************************************************************
+
+function User(name,skill){
+    return name+" "+skill;
+
+}
+alert(User("Manasi","React"));
+
+
+//*********************************************************************
+
+//Interview Questions
+
+function Demo2(a,b)
+{
+    console.log("hello A")
+    return a+b;
+    console.log("hello B");
+    console.log("hello B");
+    console.log("hello B");
+    
+    // no return 
+    //because after the keyword retun declared whatever code you write there will be no response........
+    //it never shows how many codes youn write
+}
+console.log(Demo2(500,150));
+
+//**********************************************************
+
+//function Add(x,y){
+ //   console.log(x + y);
+//}
+//Add(20,20);
+
+//Add(20);//NaN
+//Add();//NaN
+
+//*************************************************************
+
+
+//default parameter pass default values while function declarations........
+
+function Add (a=0,b=0)
+{
+    console.log(a+b);
+}
+Add(200,200);//400
+Add(100);//100
+Add();//0
+
+
+//****************************
+
+//Multiplicatoin the we set deafault parameter is "1"...............
+
+</script>
+</body>
+</html>

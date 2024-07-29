@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 2</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      .box1 {
+        height: 100px;
+        width: 700px;
+        margin: auto;
+        background-color: red;
+        margin-top: 200px;
+      }
+      .box2 {
+        height: 100px;
+        width: 700px;
+        margin: auto;
+        background-color: orange;
+      }
+
+      .button{
+        background-color: blue;
+        height: 30px;
+        width: 125px;
+        margin-left: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      <marquee behavior="scroll" direction="left" style="color: orange"
+        >JS Assignment 2 DOM
+      </marquee>
+    </h1>
+    <div class="box1">
+      <label for="">Enter Your Email</label>
+
+      <input type="text" name="" id="email" onkeyup="getData()" />
+
+
+      <label for="">Enter Your Password</label>
+
+      <input type="password" name="" id="pass" onkeyup="demo2()" />
+    </div>
+
+    <div class="box2">
+      <label for="">Email</label>
+      <input type="text" id="emailid" />
+
+      <!-- <h3 id="demo1"></h3> -->
+
+      <label for="">Password</label>
+      <input type="password" id="passid"  />
+
+
+      <!-- <h3 id="demo2"></h3> -->
+
+
+      <!-- <button class="button" onclick="demo()">Show Password</button> -->
+
+      <button class="button" onclick="Showpass()">Show Password</button>
+
+    </div>
+
+
+    <script>
+      function getData() {
+        var result = document.getElementById("email").value;
+
+        console.log(result);
+
+        document.getElementById('emailid').value = result;
+      }
+
+      const demo2 = () => {
+        var result2 = document.getElementById("pass").value;
+
+        console.log(result2);
+
+        document.getElementById("passid").value = result2;
+      }
+
+
+
+       const Showpass = () => {
+
+            if(passid.type==='password')
+            {
+                passid.type="text";
+            }
+
+            else
+            {
+                passid.type="password"
+            }
+        }
+      
+    </script>
+  </body>
+</html>

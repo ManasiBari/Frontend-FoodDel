@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let shop_amt=+prompt (`Enter a Shopping Amount`,0);
+       // let disc=0;
+       // let (shop_amt=disc/100);
+
+       
+
+        if (shop_amt<10000)
+        {
+            discount = 0;
+        }
+        
+        
+        else if(shop_amt>=10000 && shop_amt<20000 )
+        {
+            discount = 10;
+
+        }
+        else if(shop_amt>=20000 && shop_amt<30000 )
+        {
+            discount = 20;
+
+        }
+        else if(shop_amt>=30000 && shop_amt<40000 )
+        {
+            discount = 30;
+
+        }
+        else if(shop_amt>=40000 && shop_amt<50000 )
+        {
+            discount = 50;
+
+        }
+
+       // var discAmt = shop_amt * disc/100;
+        //document.write(`<h1>Your Shopping Amount Is ${shop_amt}  </h1>`)
+
+        
+        var discountAmt= shop_amt * discount/100;
+
+        netAmt=shop_amt-discountAmt;
+        document.write(`<h1>Your Total Shopping Amount is ${shop_amt}<br> You Get ${discount}% <br>Your Total discount Is${discountAmt}<br>Your Total Amount Is <mark>${netAmt}</mark></h1>`)
+        
+
+        //var netAmt = shop_amt-discAmt;
+       // document.write(`<h1>Your Total net Amount Is <mark> ${netAmt}    </mark></h1>`)
+
+
+        //var discAmt = shop_amt *disc/100;
+        //document.write(`<h1>Your Shopping Amount Is ${shop_amt}</h1>`)
+        //document.write(`<h1>You Get ${disc} % discount and You Get a ${discAmt}</h1>`)
+
+        //var netAmt = shop_amt-d
+        //document.write(`<h1>Your Total net Amount Is <mark>${netAmt}</mark></h1>`)
+       // alert(`Your total shopping amout is ${shop_amt} <br> You get ${discount}% Your total amount`);
+        
+        
+        
+       
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

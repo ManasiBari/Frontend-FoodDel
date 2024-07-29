@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Self invoking :- No need to call function
+
+        ():- execute like 
+     -->
+     <script>
+        (
+            function()
+            {
+                alert('Hello self invoking function');
+            
+            }
+            ()
+        )
+
+        //____________________________________________________________________
+
+        //function passing as a variable
+
+        const Sum=(a,b)=>{
+            return a+b;
+        }
+
+        const result=Sum(100,20)+150+10+20*5;
+        alert(result);
+     </script>
+    
+</body>
+</html>

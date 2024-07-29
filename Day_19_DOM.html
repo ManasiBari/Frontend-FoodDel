@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <!-- DOM Object- DOcument Object Model
+    
+
+        DOM Tree
+        
+    is a hirarchy of a html content or html page i.e tree based structure 
+
+    when a web page is loaded browser creates a dom object
+
+    With the HTML DOM, JavaScript can access and change all the elements of an HTML document.
+
+
+
+    With the object model, JavaScript gets all the power it needs to create dynamic HTML:
+
+JavaScript can change all the HTML elements in the page
+JavaScript can change all the HTML attributes in the page
+JavaScript can change all the CSS styles in the page
+JavaScript can remove existing HTML elements and attributes
+JavaScript can add new HTML elements and attributes
+JavaScript can react to all existing HTML events in the page
+JavaScript can create new HTML events in the page
+
+
+In other words: The HTML DOM is a standard for how to get, change, add, or delete HTML elements.
+
+
+
+
+*********************************************************************
+
+
+What is the DOM?
+The DOM is a W3C (World Wide Web Consortium) standard.
+
+The DOM defines a standard for accessing documents:
+
+"The W3C Document Object Model (DOM) is a platform and language-neutral interface that allows programs and scripts to dynamically access and update the content, structure, and style of a document."
+
+The W3C DOM standard is separated into 3 different parts:
+
+Core DOM - standard model for all document types
+XML DOM - standard model for XML documents
+HTML DOM - standard model for HTML documents
+
+    -->
+
+
+
+    <h1 id="data">Hello Welcome To The HTML DOM</h1>
+
+    <h3 class="para">HTML Para 1</h3>
+    <h3 class="para">HTML Para 2</h3>
+    <h3 class="para">HTML Para 3</h3>
+    <h3 class="para">HTML Para 4</h3>
+<br>
+<br>
+<hr>
+<hr>
+
+<input type="text" name="username" value="Jackson wang" id="username">
+
+<!-- ***************************************************************************************** -->
+
+<script>
+    const result = document;
+    console.log(result);
+
+    //body
+
+    console.log(result.body);
+    console.log(result.head);
+
+    //***********************************************************
+
+   // dom methods :- To Access html Elements 
+
+    //document.getElementById()
+   // document.getElementsByClassName()
+   // document.getElementsByName()
+  //  document.getElementsByTagName()
+
+
+  //Universal Methods
+
+  var result2 = document.getElementById('data');
+
+  //get data
+  console.log(result2);
+  console.log(result2.innerHTML);
+
+  //set data
+  document.getElementById('data').innerHTML = "HTML DOM Objects";
+
+  //************************************************************
+//by class name
+//document.getElementByClassName()
+
+var result3 = document.getElementsByClassName('para');
+console.log(result3);
+
+//Access through indexing
+
+var result4 = document.getElementsByClassName('para')[0].innerHTML;
+console.log(result4);
+
+var result5 = document.getElementsByClassName('para')[2].innerHTML;
+console.log(result5);
+
+//All data fetch
+
+var data1 = document.getElementsByClassName('para');
+console.log(data1);
+
+//loop
+
+for (let i=0; i< data1.length;i++)
+{
+    console.log(data1[i].innerHTML);
+
+    //data1[i].innerHTML="Hello Data"
+}
+
+
+//set Data
+document.getElementsByClassName('para')[0].innerHTML="Hello Updated Dom 1";
+
+//************************************************************************************
+
+//By Tag Name
+
+//Access through indexing
+
+var data3 = document.getElementsByTagName('h3');
+console.log(data3);
+
+var data4 = document.getElementsByTagName('h3')[0].innerHTML;
+console.log(data4);
+
+//set data
+document.getElementsByTagName('h3')[3].innerHTML = "Hello Dom Tree Objects";
+
+//for loop
+for (let i=0; i< data3.length;i++)
+{
+    console.log(data1[i].innerHTML);
+
+    //data3[i].innerHTML="Hello Data"
+}
+
+
+//**************************************************************************************
+
+// by Name
+
+
+var data5 = document.getElementsByName('username')[0].value;
+console.log(data5);
+
+
+//set data
+document.getElementsByName('username')[0].value = "Govind";
+
+//************************************************************************************
+
+// Universal Methods
+
+
+        // querySelector()- return only 1st matching html elment
+
+        // document.querySelector('#id,.class,tagname');
+
+        // querySelectorAll()- return all matching html element which matched with specific selector
+
+        console.log("*********")
+
+        // let data6=document.querySelector('#data').innerHTML;
+
+        let data6 = document.querySelector('.para').innerHTML;
+        console.log(data6);
+
+        //***************************************************************************************
+
+        let data7 = document.querySelectorAll('#data')[0].innerHTML;
+        console.log(data7);
+
+        let data8 = document.querySelectorAll('.para')[2].innerHTML;
+        console.log(data8);
+
+</script>
+
+
+</body>
+</html>

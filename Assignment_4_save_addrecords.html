@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .box1{
+            height: 200px;
+            width: 200px;
+            margin-top: 50px;
+        }
+        .box1 label{
+            font-size: 20px;
+        }
+        .box2{
+            height: 250px;
+            width:250px;
+            margin: auto;
+            border: 2px solid blue;
+           
+        }
+        .box2 label{
+            margin-left: 40px;
+            font-size: 20px;
+        }
+        .box2 input{
+            margin-left: 40px;
+        }
+        .name{
+            margin: auto;
+        }
+        .btn{
+           background-color: aqua;
+           height: 40px;
+           width: 100px;
+           text-align: center;
+           margin-left: 40px;
+        }
+    </style>
+</head>
+<body>
+    
+          <div class="box1">
+        <label for="name1">Enter a Name:</label>
+    <input type="text" id="name1">
+    <br><br>
+    <label for="mobile1">Enter a Mobile:</label>
+    <input type="text" id="mobile1">
+    <br><br><br>
+    <button class="btn" onclick="saveRecord()">Save Record</button>
+    </div>
+
+    <div class="box2">
+        <label for="name2">Enter a Name:</label>
+    <input type="text" id="name2"><br><br>
+    <label for="mobile2">Enter a Mobile:</label>
+    <input type="text" id="mobile2"><br><br>
+    <button  class="btn" onclick="addRecord()">Add Record</button>
+
+    </div>
+
+
+    <script>
+
+        function saveRecord() {
+            var name1 = document.getElementById('name1').value;
+            var mobile1 = document.getElementById('mobile1').value;
+            document.getElementById('name2').value = name1;
+            document.getElementById('mobile2').value = mobile1;
+        }
+    
+        function addRecord() {
+            // Clear data in both Box 1 and Box 2
+            document.getElementById('name1').value = "";
+            document.getElementById('mobile1').value = "";
+            document.getElementById('name2').value = "";
+            document.getElementById('mobile2').value = "";
+        }
+    </script>
+</body>
+</html>

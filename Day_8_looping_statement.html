@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- do while Statement- At least execute one time if conditions goes wrong also -->
+
+    <script>
+
+        // // /initialize
+        // do {
+        //     //statement
+        //     //inc/dec
+
+        // } while (condition)
+
+
+        // var a = 1;
+        // do {
+        //     document.write("<h1>hello do While</h1>");
+        //     a++;
+        // } while (a >= 10)
+
+
+        // var a = 1;
+        // do {
+        //     document.write("<h1>hello do While</h1>");
+        //     a++;
+        // } while (a <= 10);
+
+
+
+
+        // print odd no from 1-100
+        //
+        var sum = 0;
+        var a = 1;
+        do {
+            if (a % 2 !== 0) {
+                document.write(a + " ");
+                sum += a;
+            }
+
+            a++;
+        } while (a <= 100);
+
+        document.write(`<h1>${sum}</h1>`)
+
+
+        // *******************************************************
+
+        var p = 1;
+        do {
+            document.write("<br>" + p + "<br>");
+
+            var q = 1;
+            do {
+                document.write(q + " ");
+                q++;
+            } while (q <= 15);
+
+            p++
+        } while (p <= 10);
+
+
+
+        document.write("<br>")
+        document.write("<hr>")
+        document.write("<br>")
+        // *******************************************************
+
+        var x = 2;
+        var sum = 0;
+        do {
+            document.write(`<br><b> ${x} <br></b>`);
+
+            var y = 1;
+            do {
+                var res = x * y;
+                document.write(res + " ");
+                y++;
+
+                sum += res;
+
+            } while (y <= 10);
+
+            x++;
+
+            document.write("Total Sum Is  = " + sum)
+
+        } while (x <= 20);
+
+
+        document.write('<hr><br>')
+
+
+        // **********************************************************
+
+        // for loop- intialize condition inc.dec  -  in sinle line
+        //easy way to write code
+
+        // for(init,condition,inc/dec)
+
+        // whole no 100
+
+        // for(var a=0;a<=100;a++)
+        // {
+        //     document.write(a+" ");
+        // }
+
+
+        // ****************************************************************
+        // for loop- even no -1-50
+
+        // for(let i=1;i<=50;i++)
+        // {
+        //     if(i%2==0)
+        //     document.write(i+" ");
+        // }
+
+        // for(let i=0;i<=50;i+=2)
+        // {
+        //     document.write(i+" ");
+        // }
+
+        // ))))))))))))))))))))))))))))))))))))))))))))))))))))))))))
+
+
+        // for(let i=0;i<=10;)
+        // {
+        //     console.log("Hello");
+        //     i++;
+        // }
+
+        // var i=1;
+        // for(;i<=10;i++)
+        // {
+        //     console.log("Hello");
+
+        // }
+
+
+        // for (; ;) {
+        //     let i = 1;
+        //     while (i <= 10) {
+        //         console.log("Hello");
+        //         i++;
+        //     }
+        // break;
+        // }
+
+
+        // nested for loop
+
+        for (let i = 0; i <= 10; i++) {
+            document.write("<br>" + i + "<br>");
+            for (let j = 0; j <= 15; j++) {
+                document.write(j + " ");
+            }
+        }
+
+
+        document.write("<br>")
+
+        // *
+        // **
+        // ***
+        // ****
+        // *****
+        // ******
+
+
+        for(let i=0;i<=6;i++) //i=0 1 2
+        {
+            for(let j=0;j<=i;j++)//j=0   0<=2  1<=2 2<=2
+            {
+                document.write("#"); 
+            }
+            document.write("<br>");
+        }
+
+        //#
+        //##
+        //###
+        //####
+        //#####
+
+    </script>
+</body>
+
+</html>

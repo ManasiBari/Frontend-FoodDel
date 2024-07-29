@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    Sync :- line by line excution
+
+    Eg.:- 
+
+    /take 50 Sec
+    function A()
+    {
+        API called
+        network
+        function
+    }
+    A()
+
+
+
+    /Take 5sec
+    functio B()
+    {
+        normal function
+    }
+    B()
+
+
+NOte:-(by default executes top to bottom)
+and takes 55 sec as ex if first have issue with excution then b part also not execute
+
+
+
+
+Async :-
+
+doesn't block the operation
+parralel excution
+
+i.e:- doesn't  wait for its excution but it sends only request and continue their execution
+
+30 sec
+function A()
+{
+    API called
+    network
+    function
+
+}
+A()
+
+
+5 Sec
+function B()
+{
+    normal function
+}
+B()
+
+
+Note:-(if one is not excuted but other b part is executed this async function)
+     -->
+    
+
+     <!-- 
+        Callback Function  :- I Will call back later
+
+        One function execute into another function
+
+        One function execute after another function finish their execution
+
+        i.e :- one function passing to another function as a argument
+
+
+      -->
+      <script>
+       // function A()
+
+       // {
+       //     console.log("Hello Function A");
+            
+       // }
+      //  A()
+    
+
+       // function B()
+       // {
+         //   console.log("Hello Function B")
+            
+
+      //  }
+       // B()
+
+
+
+        function A()
+        {
+            console.log("This is Function A");
+
+        }
+        //Passed a parameter for above function
+
+        function B(callback)
+        {
+            //called that function
+            callback();
+            console.log(" This is Function B");
+        }
+        B(A);
+        
+
+        //***********************************************************************
+
+        function User(name)
+        {
+            console.log("hello your name Is "+name);
+        }
+
+        function Emp(emp_id,callback)
+        {
+
+            callback("Manasi");
+            console.log('Emp_id Is '+emp_id);
+        }
+        Emp(1234,User);
+
+
+
+//***********************************************************************************
+
+        function Greet(name)
+        {
+            return "Good Morning " +name;
+        }
+
+        function Messege(callback,empRole)
+        {
+            return callback("Pratik")+ " "+empRole;
+        }
+
+        var result=Messege(Greet,"Front End Developer");
+        console.log(result);
+          
+
+        // ****************************************************************************
+
+        function X()
+        {
+            console.log("Function X");
+        }
+        function Y(callback)
+        {
+            callback();
+        }
+        Y(X);
+
+
+
+
+
+
+        
+
+      </script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //We can update value
+
+        const obj ={
+            id:1,
+            userName:'shri',
+            userRole:'Front end',
+            userSkill: ['HTML', 'CSS', 'React', 'Modern JS', { skill1: 'AWS', skill2: 'NodeJS' }],
+            Role: ['Front end', 'Backend', 'MERN Stack'],
+            CTC:'10LPA',
+            CTC:'20LPA',
+
+
+        }
+
+        console.log(obj);
+        //named indexing
+        console.log(obj.userName);
+        console.log(obj.userSkill);
+
+        //another way to write
+        console.log(obj['userName']);
+
+        //We can update
+
+        obj.userName="rukhmini";
+        console.log(obj);
+
+        //Avoid repetitive key used  if used it will consider last one
+        console.log(obj.CTC);
+
+
+//************************************************************************************
+
+const Emp={
+
+    id:1,
+    tech:['React','Nodejs',['Front end',{skill1:'React',skill2:'MUI',skill3:'ModernJS'},'AWS'],'Python','ChatGPT'],
+
+    skill:{
+        tech1:'MERN',
+        tech2:'Full Stack'
+    }
+}
+
+
+//tech
+console.log(Emp.tech);
+
+
+
+//Node js
+//number indexing
+console.log(Emp.tech[1]);
+
+
+//Front end
+//using number indexing because it is array
+console.log(Emp.tech[2][0])
+
+
+//skill object
+console.log(Emp.tech[2][1])
+
+
+//MUI
+console.log(Emp.tech[2][1].skill2)
+
+
+console.log(Emp.tech[3]);
+
+
+
+
+    </script>
+</body>
+</html>

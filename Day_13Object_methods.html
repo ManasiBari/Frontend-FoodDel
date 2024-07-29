@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- method- when we passing a function as a key/Property value in a object -->
+
+    <script>
+
+        const obj = {
+            id: 1,
+            fname: 'Manasi',
+            lname: 'Bari',
+            skill: 'React',
+
+            //method
+            User: function () {
+                console.log(this.fname + " " + this.lname);
+                //this key word is using for pointing current method
+                
+            }
+        }
+
+        console.log(obj);
+
+        // User
+        console.log(obj.User);
+
+        obj.User();
+    </script>
+
+</body>
+
+</html>

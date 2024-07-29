@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+
+
+        Object :-----
+
+        Object is entity having methods and properties
+
+        js is a Object  Based Sl i.e Everything in a Js is a Object
+
+        we can stored any type of data in a object i.e Number String, Boolean, Array, Object, Null, undefined
+
+
+        key :value pair
+
+        large amount of data we can stored
+
+        Data Accessed in Object - named indexing
+
+        array data accessed number indexing
+
+
+     -->
+
+     <!-- 
+        3 Ways to Create Object
+
+
+        Literal Way 
+        Crating instance of an Object
+        Constructor Way
+
+      -->
+
+      <script>
+        //Literal Way
+
+
+        const obj={
+            //key: value
+            id:1,
+            empName: 'Manasi',
+            empRole: 'Front end Devloper',
+            empSkill: ['HTML','CSS','JS','Bootstrap','React'],
+            empOnRole: false,
+        } 
+        console.log(obj);
+
+//**************************************************************************
+
+        //2
+
+        //Creating instance of an Object using new keyword
+        //Object()- Provides functionality common to all JavaScript objects.
+
+        const User = new Object();
+        User.id = 2,
+        User.name = "Shri";
+        User.skill = "React";
+
+        console.log(User);
+
+//************************************************************************************8
+
+// this :-  this is Global Object
+// is a reference variable
+
+//refer to current Object
+
+console.log(this);
+//console.log(window);
+
+//************************************************************************
+
+//3
+
+//Constructor Way 
+
+function Emp(id, name, skill){
+    //value assining using this keyword
+
+    this.id=id;
+    this.skill=skill;
+    this.name=name;
+
+}
+
+const result=new Emp(3, 'radhe', 'MERN Devloper');
+console.log(result);
+
+
+//**************************************************************************
+
+//We can defined Array ,Number, String,boolean as a object  using 'new keyword'
+
+        // numnber as a  object
+
+        let no = 20;
+        console.log(no);//20
+        console.log(typeof no);//number
+
+        let no2=new Number (120);
+        console.log(no2);
+        console.log(typeof no2);
+
+
+        //number as string
+        let str = "ABC";
+        console.log(str);//ABC
+        console.log(typeof str);//string
+
+        let str2 =new String("xyz");
+        console.log(str2);
+        console.log(typeof str2);//object
+
+
+        //Boolean as Object
+
+        let isEligible =true;
+        console.log(isEligible);//true
+        console.log(typeof isEligible);//boolean
+
+        let isEligible2=new Boolean(false);
+        console.log(isEligible2);//false
+        console.log(typeof isEligible2);//object
+
+
+        //Array As Object
+
+        var arr1=[10,20,30,40];
+        console.log(arr1);//
+        console.log(typeof arr1);//object
+
+        var arr2=new Array('ABC',"XYZ","PQR");
+        console.log(arr2)
+        console.log(typeof arr2);
+
+
+
+      </script>
+    
+</body>
+</html>

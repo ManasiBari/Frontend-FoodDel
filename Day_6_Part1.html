@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- control statement -->
+
+    <!-- conditional statement
+
+        if
+        if else
+
+        if elseif else
+
+        switch
+
+        ternary op- alternate to if else
+    
+    -->
+    <!-- looping statement
+    
+        while
+        do while
+        for loop
+
+        for in
+        for of
+        for each
+        map
+    -->
+
+    <script>
+
+        // if- check only one condition at a time
+        // syntax
+
+        // if(condition)
+        // {
+        //     //block of code
+        // }
+
+        // **********************************
+
+        // let name="Pratik";
+        // if(name)
+        // {
+        //     alert('Hello Your name is '+name);
+        // }
+
+        // ****************************************************
+        // even or odd;
+        // prompt- used to data from user dynamically;
+
+        // let no = prompt('Enter a No To Check Even Or Odd');
+        // console.log(typeof no);//string
+
+
+
+
+        //parsing- string to integer
+        // +
+        // parseInt()
+        // Number
+
+
+
+        // ****************************************************8
+
+        // let no2=parseInt(prompt('Enter A No'));
+
+        // // alert(no2);
+        // console.log(typeof no2);//number
+
+
+        // if (no2 % 2 == 0) {
+        //     alert(`Given No Is Even No ${no2}`);
+        // }
+
+        // if (no2 % 2 !== 0) {
+        //     alert(`Given No Is odd No ${no2}`);
+        // }
+
+
+
+        // *******************************************************8
+
+        // shopping cart
+
+        // take shop_amt from user;
+        // >=20000 
+        // dic=20%
+
+        // <20000 
+        // disc=0;
+
+        let shopAmt = +prompt('Enter A Shopping Amount', 0);
+        let disc = 0;
+        if (shopAmt >= 20000) {
+            disc = 20;
+        }
+
+        if (shopAmt < 20000) {
+            disc = 0;
+        }
+
+
+        var discAmt = shopAmt * disc / 100;
+        document.write(`<h2>Hello Dear Your Shopping Amount Is ${shopAmt}</h2>`)
+        document.write(`<h2>You get ${disc} % discount And You get A ${discAmt}Rs.  Discount  </h2>`)
+
+
+        var netTotal = shopAmt - discAmt;
+        document.write(`<h1>Your Total Net Amount Is <mark>${netTotal}</mark></h1>`)
+
+
+
+        // ************************************************************************
+
+        // if else- check 2 conditions
+
+        // if(true)
+        // {
+        //     //block of code
+        // }
+        // else
+        // {
+
+        // }
+
+        // take Age from user
+        //voter 
+
+        // let age = +prompt('Enter Your Age To Check Your Eligibility', 18);
+
+        // if (age >= 18) {
+        //     alert('Congrats Dear You r Eligible ' + age);
+        // }
+        // else {
+        //     alert('Sorry You Are Not Eligible ' + age);
+        // }
+
+
+
+
+        // ***********************************************************
+
+        let no = 21;
+        if (no % 2 == 0) {
+            alert('Even No ' + no)
+        }
+        else {
+            alert('Odd No ' + no);
+        }
+
+    </script>
+</body>
+
+</html>

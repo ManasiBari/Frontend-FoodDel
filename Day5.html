@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Script>
+        //Arithematic Operator :- +, -, *, %, /
+
+        let a=20;
+        let b=15;
+
+        console.log(a+b);//35
+        console.log(a-b);//5
+        console.log(a/b);//1.333
+        //Mod reaction
+        console.log(a%b);//5
+
+        //Precedence:-
+        //* / % :- higher prority than +, -
+
+        console.log(a+b*a);//320
+        console.log(a-b*a);//-280
+        console.log(a/b*a);//26.666
+        console.log(a*b-a);//280
+
+ console.log("***********")
+
+//Pre increment ++a       
+//post increment a++
+
+var x =10;
+console.log(x);
+ 
+var y=20;
+y++;
+++y;
+console.log(y);//22
+
+var z=10;
+z--;
+console.log(z);//9
+
+var c=30;
+c++;
+console.log(c++);//31
+
+
+console.log(c);//32
+
+
+//**************************************************************8
+
+var p=10;
+++p;//11
+p++;//12
+console.log(p++);//12 13
+++p;
+console.log(--p);//13
+p--;//12
+console.log(++p);//13
+--p;//12
+console.log(p);//12
+
+//********************************************88*************
+//Assignment Operator
+//LSV =RSV
+//=,-=.+=,/=,*=
+console.log("***************")
+var name ="manasi";
+var name2=name;
+console.log(name);//manasi
+console.log(name2);//manasi
+
+let no1=20;
+let no2= 30;
+console.log(no1 +no2);//50
+
+// no1=no1+no2
+console.log(no1 += no2);//50
+
+console.log(no1);//50
+
+console.log(no1 *= no2);//1500
+
+//********************************************
+//Comparison operator
+//compare 2 or more  values
+//comparison op:- <, >, >=, <= ,!=, !==.............
+console.log("****************")
+console.log(10>20);//false
+console.log(10>=10);//true
+
+console.log(20!=30);//true
+console.log(20!=20);//false
+console.log(20!==20);//false
+
+
+//************************************************
+
+// equality operator
+// ==/ ===
+
+//note :- (==)  check the value only
+//===:- check value and their type...
+console.log("******************")
+
+console.log(100 == 100);//true
+console.log(100 == "100");//true
+console.log(100 === "100");//false
+
+//***********************************************
+//logical operator
+
+//checks two or more conditions 
+
+//Logical operator:- &&,  ||,  !
+
+//&& reutrn true when the both ciditions are true
+
+// 1 && 1 =1
+//1 && 0 =0
+//0 && 1 =0
+//0 && 0=0
+console.log("*****************#############");
+
+console.log(10>30 && 20<=10);//false
+
+console.log(100<200 && 100>=50);//true
+
+//||:- Logical or
+
+// 1 || 1=1
+// 1 || 0=1
+// 0 || 1=1
+// 0 || 0=0
+
+console.log("***************");
+ 
+console.log(10>=100 || 200<=500);//true
+
+
+//**************************************************
+//  ! :- return true when conditions   becomes true
+//return false when conditions becomes true
+
+//*************************************************************
+
+//Bitwise operaor
+console.log("***************");
+
+console.log(5 & 1);//1
+
+//0 1 0 1
+//0 0 0 1
+//_______________
+//0001
+
+    </Script>
+</body>
+</html>

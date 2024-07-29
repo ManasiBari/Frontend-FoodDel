@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //  let keyword is used to declared Js Variable. it is Modern Js Keyword
+
+let NAME = "Shree";
+console.log(NAME);
+
+//Rule No 1:- We Can Declared Variable without initialization...
+
+let name = "jk";
+console.log(name);
+
+
+
+//Rule No 2:- We can Update Value
+let age = 20;
+age =25;
+console.log(age);
+
+
+
+
+//Rule No3:- We can not redeclared variable with same name....
+let EMPNAME ="Jackson";
+//let COMNAME = "Dylan"; it gives the error same expresson
+console.log(EMPNAME);
+
+//block level :- function Scope- (limited for the block)
+
+let x = 100;
+        console.log(x);//100 out
+
+        if (x) {
+            let x = 300;
+            console.log(x);//300 out
+        }
+        console.log(x);//100 out
+
+
+
+        let y=1000;
+        console.log(y);//1000 out
+        function Demo()
+        {
+            let y=2000;
+            console.log(y);//2000 out
+        }
+
+        Demo()
+        console.log(y);//1000 out
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

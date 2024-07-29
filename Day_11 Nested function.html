@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        Nested function
+     -->
+
+
+     <script>
+        //Nested callback function
+
+       // function A()
+        //{
+          //  console.log("function A called");
+            //function Fname(fname)
+            //{
+             //   console.log("Your Fname Is "+fname);
+
+           // }
+            //function Lname(lname, callback)
+            //{
+             //   callback("Jackson")
+               // console.log("Your Lname Is "+ lname);
+           // }
+          //  Lname("wang", Fname);
+
+       // }
+
+      //  function B(callback)
+       // {
+          //  callback();
+         //   console.log("function B called");
+
+       // }
+      //  B(A);
+
+        //Output:-
+        //function A called
+        //Your Fname  Is Jackson
+        //Your Lname  Is Wang
+        //function B called
+
+        //******************************************************
+
+        //Nested Normal Function
+
+      //  function A()
+      //  {
+       //     function B()
+        //    {
+              //  console.log(" Hello nested Normal function")
+          //  }
+          //  B()
+       // }
+       // A();
+
+
+       const A= ()=>
+        {
+            const B= ()=> 
+            {
+                console.log(" Hello nested Normal function")
+            }
+            B()
+        }
+        A();
+
+       // *****************************************************************
+
+// const Sum =(a,b) =>{
+  //  const Sum2 = () =>{
+   //     return a+b
+   // }
+   // return Sum2()
+
+//}
+//console.log(Sum (100,200));
+
+//************************************************************
+
+
+
+function Sum(a,b) {
+    function Sum2(c,d)
+    {
+        console.log(c+d);
+    }
+    Sum2(a,b);
+}
+
+Sum(20, 50)
+
+
+
+
+     </script>
+</body>
+</html>

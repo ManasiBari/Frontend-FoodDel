@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- var keyword is used to declared Js Variable. -->
+    <script>
+        var name = "Rajesh";
+       // There are rules that we can define the variable
+
+       //Rule No 1:- We can declared variable without initilization...
+        var age;
+        age = 20;
+        console.log(age);
+
+
+
+        //Rule No 2:- WE can redeclared variable with same name
+        var skill ="HTML";
+        var skill ="ReactJs";
+        console.log(skill);
+
+
+
+        //Rule No 3:- We can Update value.
+        var empName ="ABC";
+        
+        empName ="Manasi";
+        console.log(empName);
+        document.write(empName);
+
+        //Scope-
+        //Global Scope -Globally Accessible
+        var userPAN = "ABCDE098765k";
+        //if(0/false)
+        //if(true/1){
+            // code
+       // }
+console.log("*******************");
+       var x =100;
+       console.log(x);//100 out
+
+
+       if (true){
+        var x =200;
+        console.log(x);//200 out
+       }
+       console.log("*******************");
+
+       console.log(x); //200 out
+
+
+// ----------------------------------------------------------------
+var y = 1000;
+console.log(y);//  1000 out
+
+function Demo() {
+    //code
+     
+    var y = 2000;
+    console.log(y);// 2000 out
+
+ }
+ console.log("*******************");
+
+ Demo() //We have to call this function to print the output or show the output
+ console.log("*******************");
+
+
+     console.log(y); //1000 out Because function is end within the code 
+
+//-----------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

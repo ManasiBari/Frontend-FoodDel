@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Eg -->
+
+
+    <label for="">Enter Your Name:</label>
+    <input type="text" name="" id="username" onkeyup="getData()">
+
+    <h1 id="data"></h1>
+
+    <script>
+        function getData(){
+            var result = document.getElementById('username').value;
+
+            //console.log(result);
+
+            document.getElementById('data').innerHTML= result;
+        }
+    </script>
+
+
+
+
+
+
+
+</body>
+</html>

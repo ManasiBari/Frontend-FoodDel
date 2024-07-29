@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        .box1 {
+            height: 400px;
+            width: 400px;
+            background-color: orange;
+            float: left;
+        }
+
+
+        .box2{
+            height:400px;
+            width:400px;
+            background-color: magenta;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Events In JS
+    
+        JS is a Event Based Sl
+
+        Do something on users action i.e  Events
+
+
+        Types-
+
+
+        Mouse Events-
+        ****************************
+
+        on-prefix
+
+        onClick- when we click
+        ondblclick- when w click double
+
+        onContextMenu-when we right click on mouse button
+
+        onmouseover,onmouseleave
+        onmouseenter,onmouseout
+        onmouseup,onmousedown
+        onmousemove,onmousewheel
+
+        ****************************
+        
+        Keyboard Events-
+
+        onkeypress,onkeyup,onkeydown
+
+        ***********************************************************
+
+        Form Events
+        onblur,onfocus,onchange,onselect,onsubmit
+
+        *************************************************
+
+        Window Events
+
+        onload,onscroll,onResize
+
+
+    
+    -->
+
+    <!-- onClick- when we cliked  -->
+    <button onclick="alert('Hello Welcome To the clicked event')">Click Here</button>
+
+    <!-- ondblclick- when we dbl click on button -->
+    <button ondblclick="alert('Hello dblclick event')">Click double</button>
+
+    <!--  onContextMenu()- when we right click on a mouse button-->
+    <button oncontextmenu="alert('Hello contextmenu event')">right click here</button>
+
+
+
+    <br><br>
+
+    <hr>
+
+
+
+
+    <div class="box1" id="divbox" onmouseover="demo1()" onmouseleave="demo2()"></div>
+
+
+    <div class="box2" id="divbox2" onmouseenter="demo3()" onmouseout="demo4()" onmousedown="demo5()" onmouseup="demo6()" onmousemove="demo7()"></div>
+
+
+
+
+
+    <script>
+
+        // onmouseover- when we hovering mouse on specific element
+
+        function demo1() {
+            document.getElementById('divbox').style.backgroundColor = "violet";
+        }
+
+
+        //onmouseleave- when we leave mouse/cursor from specific element
+
+        const demo2=()=>{
+            document.getElementById('divbox').style.backgroundColor = "pink";
+        }
+
+
+
+        //onmouseenter
+
+        const demo3=()=>{
+            document.getElementById('divbox2').style.backgroundColor="purple";
+        }
+
+
+        //onmouseout-when we out from speicific element
+
+        const demo4=()=>{
+            document.getElementById('divbox2').style.backgroundColor="orange";
+        }
+
+
+        // ***************************************************
+
+        // onmouseup()- when we realsed pressed button
+        // onmousedown()- when we pressed mouse button
+
+
+        const demo5=()=>{
+            document.getElementById('divbox2').style.borderRadius="50%";
+        }
+
+        const demo6=()=>{
+            document.getElementById('divbox2').style.borderRadius="0px";
+
+        }
+
+
+
+        // ****************************************************
+
+        // onmousemove()-when mouse movement take place
+
+        function demo7()
+        {
+            document.getElementById('divbox2').style.backgroundColor="red";
+        }
+        
+    </script>
+</body>
+
+</html>

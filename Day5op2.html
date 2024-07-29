@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //typeof
+        //concatination
+        //exponential
+        //nullish coalscheing operator
+        //type of :- return data type
+
+
+        console.log(typeof "1");//string
+        console.log(typeof 100);//number
+        console.log(typeof []);//object
+        console.log(typeof null);//object
+        console.log(typeof undefined);//undefined
+
+
+        //note:- whenever we check the typeof typeof it gives you the string
+        console.log(typeof typeof 1);//string
+        console.log(typeof typeof null);//string
+        console.log(typeof typeof undefined);//string
+
+
+        //*******************************************
+        var skill="ReactJs";
+        var empName="Rajesh";
+
+        document.write('Hello Your Name Is '+empName+ "Your Skill Is "+skill);
+        
+
+        //Template literal
+
+        document.write(`<h1>Hello Your Name Is $ {empName} and Your Skill Is <mark> $ {skill}</mark></h1>`);
+  
+       // document.write(`<h1>Hello Your Name Is $ {empName} And Ypor skill is <mark> $ ({skill} </mark></h1>`);
+
+       //***********************************************************
+
+       //exponentiation operator :- retun power
+       
+       console.log(5**2);//25
+       console.log(5**3);//125
+
+
+       //ternary operor 
+       //alternate if else
+
+       let age =19;
+      // if (age>= 18)
+       //{
+       // alert ('congrats');
+
+     //  }
+
+      // else{
+       // alert('sorry come back');
+       // }
+
+
+       //cond. ? true : false 
+       // (condition ? true : false)
+       
+
+       var result = age >= 18 ? 'congrats dear' : 'Sorry Dear'
+       alert(result);
+
+
+
+       //nullish opertor  :- ?? presnt
+
+       //nullish operator exponentitation op :- ??
+       //return 1st argument if not nullish (null or undefined)
+
+      // var name ="abc"
+       //var emp_is=123;
+       //console.log(name ?? emp_id);
+
+       console.log('****************')
+       let name= null;
+       let emp_id=123;
+       console.log(name ?? emp_id);
+
+    </script>
+</body>
+</html>

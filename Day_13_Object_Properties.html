@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+     <!-- Object Methods 
+    
+        To perform multiple operations
+    
+    -->
+
+    <script>
+        // Object.keys()
+        // Object.getOwnPropertyNames()
+        // Object.values()
+        // Object.entries()
+
+        // Object.freeze()
+        // Object.seal()
+
+        // Object.isFrozen()
+        // Object.isSealed()
+        // Object.isExtensible()
+
+        // Object.is()
+        // Object.isNaN()
+
+
+        // Object.getOwnPropertyDescriptors()
+        // Object.assign()
+        // Object.create()
+
+
+        // Object.getOwnPropertySymbols()
+
+        // Object.getPrototypeOf()
+        // Object.setPrototypeOf();
+
+
+
+
+        const obj = {
+            id: 1,
+            name: 'Jk',
+            skill: 'ReactJS',
+            role: 'Front end dev',
+            email: 'JK@gmail.com',
+
+        }
+
+        // Object.keys()- return a key from a given object in an Array format
+        // Object.getOwnPropertyNames()
+        // Object.values()- return a values from given object in an Array format
+        // Object.entries()- return a key values data from given object in an Array format
+
+
+        console.log(Object.keys(obj));
+
+        console.log(Object.getOwnPropertyNames(obj));
+
+
+        console.log(Object.values(obj));
+
+        //   Object.entries()- return a key values data from given object in an Array format
+
+        console.log(Object.entries(obj));
+
+
+        // for of
+
+        for (let x of Object.entries(obj)) {
+            console.log(x);
+        }
+
+
+        // ******************************************************************
+        // Object.is()- return true if both values are same
+
+        // var res = Object.is("ABC", "ABC");
+        // var res = Object.is(10,"10");
+        var res = Object.is(NaN, NaN);//true
+        console.log(res);
+
+
+        // isNaN()
+        // isFinite()
+
+        console.log(isNaN(20));//false
+        console.log(isNaN("ABC"));//true
+
+        // **************************************************
+
+        // -Object.freeze()- the modification of existing property attributes and values, and prevents the addition of new properties.        // seal()
+
+
+
+        Object.freeze(obj);
+
+        // obj.name="Govind";
+        // obj.mobile=9876543210;
+
+        // console.log(obj);
+
+
+        // **********************
+
+        // similar to freeze but here we can update object values
+
+        Object.seal(obj);
+        obj.mobile = 987654310;
+
+        //we can update value
+        obj.name = "Madhav";
+        console.log(obj);
+
+
+
+        // **********************************************
+
+        // Object.isFrozen();
+        // Object.isSealed();
+
+
+        //Returns a value that indicates whether new properties can be added to an object
+        // Object.isExtensible();
+
+
+        console.log(Object.isFrozen(obj));//
+        console.log(Object.isSealed(obj));//
+
+        
+        console.log(Object.isExtensible(obj));
+
+
+        // ***************************************************
+
+
+        // Object.create()
+
+        //Object.assign(target,source)-copy one object source to another object
+
+
+        const obj1 = {
+            id: 1,
+            name: 'Prithvi'
+        }
+
+        const obj2 = {
+            skill: 'AWS',
+            role: 'Front end Developer',
+        }
+
+        console.log(Object.assign(obj2, obj1, { mobile: 98776543210 }));
+
+        // console.log(obj1);
+
+
+
+        // ********************************************
+
+        // Object.getPrototypeOf();
+
+        console.log(Object.getPrototypeOf(obj));
+
+        // Object.setPrototypeOf()
+
+        // ***********************************************
+
+        console.log(Object.getOwnPropertyDescriptors(obj));
+
+
+        //Returns an array of all symbol properties found directly on object o.
+        // console.log(Object.getOwnPropertySymbols(obj))
+
+
+    </script>
+
+
+    
+</body>
+</html>

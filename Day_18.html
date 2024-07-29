@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- form events -->
+
+    <!-- onfocus :- when we focus on input field -->
+
+    <!-- onblur :- When we lost our focus
+    
+    onchange
+     
+    onselect  
+  
+    onsubmit    -->
+
+    <label for="">Enter Your Name:</label>
+    <input type="text" id="name" onfocus="demo1()" onblur="demo2()">
+    
+
+    <br>
+    <br>
+    <input type="text" id="a" placeholder="a" onfocus="demo3('b')">
+    <input type="text" id="b" placeholder="b" onfocus="demo3('a')">
+
+    <br>
+    <br>
+
+    <label for="">Choose Your Skill:</label>
+
+    <select name="" id="skill" onchange="getSkill">
+        <!-- <select name="" id="skill" onchange="alert(skill.value)"> -->
+
+
+    <option value="ReactJs">ReactJs</option>
+    <option value="ChatGpt">ChatGpt</option>
+    <option value="AWS">AWS</option>
+
+</select>
+
+<!-- ************************************************************ -->
+<br>
+<br>
+
+<!-- onselect :- When We select text content -->
+
+<input type="text" id="data" value="Front End Developer" onselect="demo4()">
+
+
+<br>
+<br>
+
+
+<!-- onsubmit -->
+<form  enctype="multipart/form-data" onsubmit="Saveform(event)">
+    <label for="">Enter Your Email:</label>
+    <input type="email" placeholder="Enter Your Email" id="email">
+    <br><br>
+
+
+    <label for="">Enter Your Password:</label>
+    <input type="password" placeholder="Enter Your Password" id="password">
+
+    <br><br>
+<input type="submit" name="" id="" value="Save Form">
+        <button>Save Form 2</button>
+        <button type="submit" onclick="return confirm('Are You Sure? ')">Save Form 3</button>
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+
+        const demo1 = () => {
+            document.getElementById('name').style.backgroundColor = "gray";
+        }
+// onblur
+
+const demo2 = () => {
+    document.getElementById('name').style.backgroundColor = "pink";
+}
+
+
+//***************************************************************************
+
+const demo3 = (data) => {
+    document.getElementById(data).style.backgroundColor = "purple";
+}
+
+//***********************************************************
+
+//onchamge() :-  used while selecting options
+
+const getSkill = () => {
+    alert(document.getElementById('skill').value);
+}
+
+//***********************************************
+
+const demo4=function demo(){
+
+    var result=document.getElementById('data').value
+    alert(`Your Selected ${result}`)
+}
+
+//*****************************************************
+
+const Saveform=(e)=>{
+    //prevents the by default behavior of your browser
+
+    e.preventDefault();
+    alert('Congrats Seuccessfully Save Data!!!');
+
+    console.log(document.getElementById('email').value)
+    console.log(document.getElementById('password').value)
+
+
+    var result = document.getElementById('email').value
+   // var result = document.getElementById('password')
+
+
+ //  var result = document.getElementById('email').value;
+ //  var result = document.getElementById('password').value;
+//   document.getElementById('email').innerHTML = result;
+  //document.getElementById('password').innerHTML = result;
+  document.write(result);
+
+
+
+
+
+}
+    </script>
+
+</body>
+</html>

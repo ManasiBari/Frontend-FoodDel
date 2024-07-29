@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #box{
+        height: 400px;
+        width: 400px;
+      
+    }
+</style>
+<body>
+    <div id="box"></div>
+    <script>
+        let color = prompt('Enter your choise color V,I,B,G,Y,O,R');
+        switch(color){
+            case 'V':document.getElementById('box').style.backgroundColor="purple";
+            break;
+            case 'I':document.getElementById('box').style.backgroundColor="indigo";
+            break;
+            case 'B':document.getElementById('box').style.backgroundColor="blue";
+            break;
+            case 'G':document.getElementById('box').style.backgroundColor="green";
+            break;
+            case 'Y':document.getElementById('box').style.backgroundColor="yellow";
+            break;
+            case 'O':document.getElementById('box').style.backgroundColor="orange";
+            break;
+            case 'R':document.getElementById('box').style.backgroundColor="red";
+            break;
+            default: document.getElementById('box').style.backgroundColor="white";
+        }
+    
+      
+    </script>
+</body>
+</html>

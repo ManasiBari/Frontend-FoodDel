@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        header {
+            height: 100px;
+            width: 100%;
+            background-color: antiquewhite;
+        }
+
+        .logo {
+            height: 100%;
+            width: 40%;
+            float: left;
+
+        }
+
+        .menu {
+            width: 60%;
+            height: 100%;
+            float: left;
+        }
+
+        .menu ul li {
+            float: left;
+            margin: 20px;
+            list-style-type: none;
+            background-color: blue;
+            border: 3px solid yellow;
+            padding: 10px 30px;
+            border-radius: 20px;
+
+        }
+
+        .container {
+            height: 500px;
+            width: 100%;
+            background-color: aquamarine;
+            background-image: url(/IMAGES/computer.jpg);
+            float: left;
+        }
+
+        .box-1 {
+            height: 200px;
+            width: 50%;
+            background-color: white;
+            margin: 150px auto;
+            border-radius: 25px 25px 25px 25px;
+            border: 3px solid yellow;
+            box-shadow: 3px;
+
+
+        }
+
+        .box-1 label {
+            padding: 30px 50px 30px 50px;
+
+
+        }
+        .line{
+            border-bottom: 10px solid orange;
+            padding:5px;
+            width: 90%;
+            margin: 10px ;
+        }
+        .dot{
+            background-color: orange;
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            position: relative;
+            top: 45px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo" style="color: red;">
+            <h1>REACTJS</h1>
+            <h2 style="color: blue;">TECH</h2>
+        </div>
+        <div class="menu">
+            <ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Get Certificate</li>
+                <li style="background-color: red;">Open Admission</li>
+
+            </ul>
+
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="box-1">
+            <div style="display: flex; justify-content:space-around; ">
+                <div class="text-1">
+                    <h1>heading</h1>
+                    <div class="dot"> </div>
+                </div>
+                <div class="text-1">
+                    <h1>heading</h1>
+                    <div class="dot"> </div>
+
+                </div>
+                <div class="text-1">
+                    <h1>heading</h1>
+                    <div class="dot"> </div>
+
+                </div>
+                <div class="text-1">
+                    <h1>heading</h1>
+                    <div class="dot"> </div>
+
+                </div>
+
+            </div>
+            <div>
+                <div class="line"></div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
